@@ -1,0 +1,25 @@
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Icon?
+
+._*
+
+.Spotlight-V100
+.Trashes
+Desktop.ini
+**/__MACOSX
+
+.vscode/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+.Python

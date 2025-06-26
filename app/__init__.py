@@ -1,11 +1,10 @@
-
-from flask import Flask
+from flask import Flask, render_template
 
 def create_app():
-    app = Flask(__name__)
+    app = Flask(__name__, static_folder="static", template_folder="templates")
 
-    @app.route('/')
+    @app.route("/")
     def home():
-        return app.send_static_file('index.html')
+        return render_template("index.html")
 
     return app
